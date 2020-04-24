@@ -37,17 +37,55 @@
 // showMessage(secretCode(2));
 
 //---scope
-var key = 42;
-function getSecretCode(value){
-  let keyGen = function(){
-    let key = 12;
-    console.log('in keygen: ', key);
-    return key;
-  }
+// var key = 42;
+// function getSecretCode(value){
+//   let keyGen = function(){
+//     let key = 12;
+//     console.log('in keygen: ', key);
+//     return key;
+//   }
  
-  let code = value * keyGen();
-  console.log(' in get secret code', key);
-  return code
-}
-let secretCode = getSecretCode(2);
-showMessage(secretCode);
+//   let code = value * keyGen();
+//   console.log(' in get secret code', key);
+//   return code
+// }
+// let secretCode = getSecretCode(2);
+// showMessage(secretCode);
+
+//---making object
+// let mySymbol = Symbol();
+
+// let person = {
+//   name: 'Nathalie',
+//   age: 35,
+//   partTime: false,
+//   [mySymbol]: 'secretInformation'
+// };
+// person.age =44;
+// showMessage( person.age);
+
+// let person = {
+//   name: 'Nathalie',
+//   age: 35,
+//   partTime: false,
+//   showInfo: function() {
+//     showMessage(this.name + ' is '+ this.age);
+//   }
+
+// };
+
+// person.showInfo();
+
+//---also like below
+// let person = {
+//     name: 'Nathalie',
+//     age: 35,
+//     partTime: false,
+//     showInfo: function(realAge) {//passing arg
+//       showMessage(this.name + ' is '+ realAge);
+//     }
+  
+//   };
+  
+//   person.showInfo(43);
+//   showMessage(typeof person.showInfo);
