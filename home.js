@@ -10,6 +10,9 @@ const header = document.getElementById('message');
 header.style.color = 'red';
 header.style.fontWeight = '100';
 
+
+
+//---Button
 const button = document.getElementById('see-review');
 button.addEventListener('click', function(){
   const review = document.getElementById('review');
@@ -23,3 +26,7 @@ button.addEventListener('click', function(){
   }
   
 });
+
+const containers=document.getElementsByClassName('container');
+containers[0].classList.add('d-none');
+console.log(containers);
