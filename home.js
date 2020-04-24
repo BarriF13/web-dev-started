@@ -12,5 +12,14 @@ header.style.fontWeight = '100';
 
 const button = document.getElementById('see-review');
 button.addEventListener('click', function(){
-  console.log('clicked')
-})
+  const review = document.getElementById('review');
+
+  if (review.classList.contains('d-none')){
+    review.classList.remove('d-none');
+    button.textContent = 'Close Review';
+  }else {
+    review.classList.add('d-none');
+    button.textContent = 'See Review';
+  }
+  
+});
