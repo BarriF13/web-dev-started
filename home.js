@@ -89,3 +89,28 @@
   
 //   person.showInfo(43);
 //   showMessage(typeof person.showInfo);
+
+//------ Passing object to function
+//--sending values to function--
+let message = 'Hello'
+function changeMessage(){
+  let message = 'Hiya';
+  
+}
+changeMessage(message);//prints Hello
+showMessage(message);
+
+//--now object
+//--sending objects to functions
+let person = {
+      name: 'Nathalie',
+      age: 35,
+      partTime: false
+    };
+//---now making a function to add up age
+function incrementAge(p){
+  p.age++;
+};
+incrementAge(person);
+showMessage(person.age);
+//conclusion : when we pass objects we are able to MODIFY their properties and their methods. But when we pass some data by value such as string or number,bool.. any changes to those will be lost.
